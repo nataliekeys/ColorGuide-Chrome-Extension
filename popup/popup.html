@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ColorGuide</title>
+    <style>
+      /* make sure that adding text to info section does not alter viewport size. */
+      #infoSection {
+        width: 150px;
+        height: 80px;
+        overflow: scroll;
+      }
+    </style>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <h2>ColorGuide Online Shopping Assistant</h2>
+    <button id="start-button" class="button">
+      Open/close the color selector
+    </button>
+    <span id="result"></span>
+    <div class="container">
+      <ul class="instructions">
+        <li>Click a spot on website to create color label for spot</li>
+        <li>Click on <b>✕</b> button to close label</li>
+        <li>
+          Click on <b>―</b> button to minimize label,
+          <b><element class="plus">+</element></b> to expand it again
+        </li>
+        <li>Press and hold <b>Alt+Shift+W</b> to start and stop tool</li>
+        <li>Press and hold <b>Alt+Shift+R</b> to remove all labels</li>
+      </ul>
+    </div>
+    <script src="./popup.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,67 @@
+{
+  "manifest_version": 3,
+  "name": "ColorGuide",
+  "description": "This browser extension allows users to see the simple color labels of products. The goal is to eliminate confusion surrounding the colors of products when shopping online by providing simple color labels. ",
+  "version": "1.0",
+  "icons": {
+    "16": "/images/16.png",
+    "19": "/images/19.png",
+    "32": "/images/32.png",
+    "38": "/images/38.png",
+    "64": "/images/64.png",
+    "48": "/images/48.png",
+    "128": "/images/128.png"
+
+  },
+  "permissions": [
+    "background",
+    "tabs",
+    "activeTab",
+    "scripting"
+  ],
+  
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content/contentScript.js", "content/label.js", "content/color.js"]
+    }
+  ],
+  "commands": {
+    "toggleTool": {
+      "suggested_key": {
+        "default": "Alt+Shift+W",
+        "mac": "Alt+Shift+W"
+      }, 
+      "description": "Toggle tool"
+    },
+      "removeLabels": {
+      "suggested_key": {
+        "default": "Alt+Shift+R",
+        "mac": "Alt+Shift+R"
+      },
+      "description": "Remove Labels"
+    },
+    "_execute_action": {
+      "suggested_key": {
+         "default": "Alt+Shift+W",
+        "windows": "Alt+Shift+W",
+        "mac": "Alt+Shift+W"
+      }
+    }
+  },
+"action": {
+   "default_icon": {                    
+     "19": "/images/19.png",      
+     "38": "/images/38.png"         
+   },
+   "default_popup": "popup/popup.html"       
+}
+
+}
+
