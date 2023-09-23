@@ -59,15 +59,11 @@ This is the instructions window for how to use the program, it comes up when use
 
 After turning on the tool either through the [Instruction Window](#instruction), or the shortcut `Alt Shift W`, a status label will appear in the top right corner. Now, users cannot interact with buttons or links on the webpage, but instead, wherever users click, a label will be created.
 
-There is no simulated back end.
-
 <img width="925" alt="Full Screen View" src="https://user-images.githubusercontent.com/64702845/224154070-82661e4f-bd32-4a5e-bc55-cbeaccb5f884.png">
 
 ### Screen 3: Color Labels
 
 Color labels can be placed anywhere on the open website and include the color name of the spot selected, a minimize button in the upper left, and a close button in the upper right. There is a circle in the upper left corner of the label, which indicates the location where the user clicked.
-
-There is no simulated back end.
 
 <img width="325" alt="Color Labels" src="https://user-images.githubusercontent.com/64702845/224150228-e3748516-317d-45ef-abd6-4767ca58ca61.png">
 
@@ -75,15 +71,11 @@ There is no simulated back end.
 
 When a color label is minimized, it becomes only a white "+" on a black background over the selected spot. If the "+" is clicked, the label will re-expand and return to the state it was in before being minimized.
 
-There is no simulated back end.
-
 <img width="325"  alt="Minimized Color Labels" src="https://user-images.githubusercontent.com/64702845/224150617-93b6557a-e5cc-4154-887e-af7eecfbaedb.png">
 
 ### Screen 5: Tool turned off
 
 After turning off the tool either through the [Instruction Window](#instruction), the shortcut `Alt Shift W`, or double clicking the status label, the status label will indicate the tool is turned off, then disappear after some seconds. Now users can continue browsing the website, and the labels stay where there are. Users can manually close each label, or use the shortcut `Alt Shift R` to close all of the labels at once. The shortcut `Alt Shift R` can be used when the tool is on or off.
-
-There is no simulated back end.
 
 <img width="925" alt="Full Screen View" src="https://user-images.githubusercontent.com/64702845/224157208-fe516320-8e39-4783-8273-7e586e4df41b.png">
 
